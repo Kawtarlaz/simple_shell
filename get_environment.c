@@ -1,5 +1,11 @@
 #include "shell.h"
 
+/**
+ * get_environment - fetches a specified environment variable's value
+ * @env: the environment variable name to fetch
+ *
+ */
+
 char *get_environment(char *env)
 {
 int index = 0;

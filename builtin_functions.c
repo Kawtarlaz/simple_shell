@@ -1,5 +1,13 @@
 
 #include "shell.h"
+
+/**
+ * is_builtin - Checks if the given command is a builtin command.
+ * @cmd: The command string to check.
+ *
+ * Return: 1 if the command is a builtin, otherwise 0.
+ */
+
 int is_builtin(char *cmd)
 {
 char *builtins[] = {"exit", "env", "setenv", "unsetenv", "cd", NULL};
@@ -13,6 +21,14 @@ return (1);
 return (0);
 }
 
+/**
+ * handle_builtin - Handles execution of specific builtin commands.
+ * @cmd: A list of strings representing the command and its arguments.
+ * @argv: The original arguments passed to the main program.
+ * @status: A ptr to an integer representing the program's status or exit code.
+ * @index: An integer representing the current index or position.
+ */
+
 void handle_builtin(char **cmd, char **argv, int *status, int index)
 {
 if (string_compare(cmd[0], "exit") == 0)
@@ -20,6 +36,14 @@ exit_shell(cmd, argv, status, index);
 else if (string_compare(cmd[0], "env") == 0)
 print_environment(cmd, status);
 }
+
+/**
+ * exit_shell - Handles the "exit" builtin command.
+ * @cmd: A list of strings representing the cmd and its arguments.
+ * @argv: The original arguments passed to the main program.
+ * @status: A ptr to an int representing the program's status or exit code.
+ * @idx: An integer representing the current index or position.
+ */
 
 void exit_shell(char **cmd, char **argv, int *status, int idx)
 {
@@ -50,6 +74,12 @@ free_string_array(cmd);
 exit(exit_val);
 }
 
+/**
+ * print_environment - Handles the "env" builtin command.
+ * @cmd: A list of strings representing the command and its arguments.
+ * @status: A ptr to an integer representing the program's status or exit code.
+ */
+
 void print_environment(char **cmd, int *status)
 {
 int index = 0;
@@ -61,6 +91,11 @@ write(STDOUT_FILENO, "\n", 1);
 free_string_array(cmd);
 (*status) = 0;
 }
+
+/**
+ * is_positif_integer - check if the value is positif
+ * @string: checked value
+ */
 
 int is_positif_integer(char *string)
 {

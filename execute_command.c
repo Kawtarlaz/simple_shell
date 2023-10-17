@@ -1,5 +1,14 @@
 #include "shell.h"
 
+/**
+ * execute_command - Executes a given command in a new process.
+ * @command_to_execute: An array of pointers containing the command and its arguments.
+ * @argv: The program's argument vector (typically from main).
+ * @index: The current command number (how many commands have been processed).
+ *
+ * Return: The status of the executed command.
+ */
+
 int execute_command(char **command_to_execute, char **argv, int index)
 {
 char *full_command;

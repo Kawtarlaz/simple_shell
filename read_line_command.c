@@ -1,5 +1,11 @@
 #include "shell.h"
 
+/**
+ * read_line_command - Reads a line of command from standard input.
+ *
+ * Return: A pointer to the read line or NULL if an error occurs.
+ */
+
 char *read_line_command(void)
 {
 char *line = NULL;
