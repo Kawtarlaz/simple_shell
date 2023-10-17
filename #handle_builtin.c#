@@ -1,0 +1,7 @@
+{isDate(data) ? (
+    //     format(new Date(data), "yyyy-MM-dd hh:mm")
+    //   ) : isBoolean(data) ? (
+    //     data ==true && <Icon as={CheckIcon} color={"primary.5"} />
+    //   ) : (
+    //     data
+    //   )}

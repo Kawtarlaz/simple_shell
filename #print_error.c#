@@ -27,7 +27,7 @@ index++;
 }
 }
 buf[index] = '\0';
-string_reverse(buf, index);
+string_reverse(buf , index);
 return (string_duplicate(buf));
 
 }
