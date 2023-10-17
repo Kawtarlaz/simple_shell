@@ -1,5 +1,12 @@
 #include "shell.h"
 
+/**
+ * atoi_custom - converts a string to an integer.
+ * @string: the string to be converted to an integer.
+ *
+ * Return: integer value of the converted string.
+ */
+
 int atoi_custom(char *string)
 {
 int index = 0;

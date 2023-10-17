@@ -1,4 +1,12 @@
 #include "shell.h"
+
+/**
+ * get_path - Finds the absolute path of a command.
+ * @cmd: the command to find the path for.
+ *
+ * Return: A ptr to the absolute path of the command if found, otherwise NULL.
+ */
+
 char *get_path(char *cmd)
 {
 char *path_environment = NULL, *directory = NULL, *full_cmd = NULL;
