@@ -2,7 +2,7 @@
 
 /**
  * execute_command - Executes a given command in a new process.
- * @command_to_execute: An array of pointers containing the command and its arguments.
+ * @command_to_execute: An array of ptrs containing the cmd and its arguments.
  * @argv: The program's argument vector (typically from main).
  * @index: The current command number (how many commands have been processed).
  *

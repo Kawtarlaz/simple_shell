@@ -5,7 +5,7 @@
  * tokenizer_line_command - Tokenizes a command line into an array of strings.
  * @line_input: The command line string to be tokenized.
  *
- * Return: A pointer to an array of strings (tokens) if successful, otherwise NULL.
+ * Return: A ptr to an array of strings (tokens) if successful, otherwise NULL.
  */
 
 char **tokenizer_line_command(char *line_input)

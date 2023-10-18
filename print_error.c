@@ -21,8 +21,8 @@ free(i);
 /**
  * itoa_custom - Converts an integer to its string representation.
  * @number: The integer to convert.
- * 
- * Return: A pointer to the string representation of the number.
+ *
+* Return: A pointer to the string representation of the number.
  */
 
 char *itoa_custom(int number)

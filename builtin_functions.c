@@ -95,6 +95,8 @@ free_string_array(cmd);
 /**
  * is_positif_integer - check if the value is positif
  * @string: checked value
+ *
+ *Return: return 1 if the value is positif and 0 is not
  */
 
 int is_positif_integer(char *string)
